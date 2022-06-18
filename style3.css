@@ -14,7 +14,8 @@ body {
     background-color: grey;
     border-radius: 25px 25px 25px 25px;
 }
-.logo{
+
+.logo {
     margin-left: 1rem;
 }
 
@@ -39,4 +40,33 @@ h1 {
     font-size: 3rem;
     box-shadow: grey 5px 8px 10px;
     border-radius: 25px 25px 25px 25px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.articles {
+display: flex;
+justify-content: center;
+   gap: 4rem;
+
+}
+
+
+.fotografia {
+    border: 2px solid black;
+width: 630px;
+ 
+ 
+}
+
+
+.diseny{
+    border: 2px solid black;
+    width: 630px;
+    
+   
 }
