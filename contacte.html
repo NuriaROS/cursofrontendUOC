@@ -6,53 +6,74 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacte</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-  <section id="contacte"></section>
-  <h1>FORMULARI DE CONTACTE</h1>
-  <img src="assets/img/contacte.jpg">
-  <br />
 
-  <form name="formulari" method="get" action="procesar.php"></form>
-  <!--metodo GET: envía cantidad limitada de inf de forma pública (datos incluidos en la URL, la cual no puede tener más de 255 carácteres) 
+  <!--CABECERA-->
+
+  <header class="header">
+    <img src="assets/img/logo.svg" alt="Logo" class="img_menu">
+    <ul>
+      <li><a href="index.html" ><strong>Inici</strong></a></li>
+      <li><a href="cv.html"><strong>CV</strong></a></li>
+      <li><a href="contacte.html"><strong>Contacte</strong></a></li>
+    </ul>
+  </header>
+
+  <!--TITULO-->
+
+  <section>
+    <h1 class="titol">FORMULARI DE CONTACTE</h1>
+  </section>
+
+  <!--FORMULARIO-->
+
+  <section class="formulari">
+    <form name="formulari" method="get" action="procesar.php">
+      <!--metodo GET: envía cantidad limitada de inf de forma pública (datos incluidos en la URL, la cual no puede tener más de 255 carácteres) 
     metodo POST: envia cantidad ilimitada de información de forma privada (datos no visibles y longitud que necesitemos)
     ACTION:  declara la URL del archivo en el servidor que va a procesar la información enviada por el formulario.-->
 
-  <div>
-    <label for="campnom">Escriu el teu nom</label>
-    <!--LABEL: etiqueta para identificar elemento del formulario-->
-    <input id="campnom" type="text" placeholder="nom i cognoms" />
-    <!--INPUT: crea campo entrada. PLACEHOLDER: muestra texto en fondo del elemento para indicar que tipo de valor introducir -->
 
-    <label for="campemail">Escriu el teu email</label>
-    <input id="campmail" type="text" placeholder="email" />
+      <label for="campnom">Escriu el teu nom</label>
+        <!--LABEL: etiqueta para identificar elemento del formulario-->
+        <input id="campnom" type="text"  />
 
-    <label for="campcom">Comentaris<textarea id="campcom" cols="50" rows="6"
-        placeholder="comentaris"></textarea></label>
-   <!-- <input id="campcom" type="textarea" cols="50" rows="6" placeholder="comentaris" />-->
+        <!--INPUT: crea campo entrada. PLACEHOLDER: muestra texto en fondo del elemento para indicar que tipo de valor introducir -->
+
+        <label for="campemail">Escriu el teu email</label>
+        <input id="campmail" type="text" />
 
 
-  </div>
+        <label for="campcom">Comentaris <textarea id="campcom" cols="50" rows="10"
+            ></textarea></label>
+        
 
-  <div>
+        <!--CHECKBOX: casilla para activar o desactivar una opción-->
+<footer class="polit">
+        <label for="f_accept">He llegit i accepto la <a href="http://www.politicadeprivacitat" target="_blank">
+            politica
+            de privacitat</a></label>
+            <input type="checkbox" name="accept" id="casilla">
+        <!--TARGET: donde abrirá el enlace, _SELF: se asigna por defecto, abre en misma ubicación que el documento actual (el mismo recuadro o ventana), _BLANK: abre en nueva ventana , _PARENT: are en el recuadro padre, _TOP: abre en la ventana actual-->
 
-    <input type="checkbox" name="accept" id="casilla">
-    <!--CHECKBOX: casilla para activar o desactivar una opción-->
-    <label for="f_accept">He llegir i accepto la
-      <a href="http://www.politicadeprivacitat" target="_blank">politica de privacitat</a>
-      <!--TARGET: donde abrirá el enlace, _SELF: se asigna por defecto, abre en misma ubicación que el documento actual (el mismo recuadro o ventana), _BLANK: abre en nueva ventana , _PARENT: are en el recuadro padre, _TOP: abre en la ventana actual-->
-      <br />
-      <input type="submit" value="Enviar">
-      <!--SUBMIT: genera un botón para enviar formulario-->
+        <input type="submit" value="Enviar">
+</footer>
 
-      <img src="assets/img/facebook.svg" />
-      <img src="assets/img/instagram.svg" />
-      <img src="assets/img/twitter.svg" />
+        <!--SUBMIT: genera un botón para enviar formulario-->
+    </form>
+  </section>
+
+  <footer class="pie">
+    <img src="assets/img/facebook.svg" width="70px" height="70px" />
+    <img src="assets/img/instagram.svg" width="70px" height="70px" />
+    <img src="assets/img/twitter.svg" width="70px" height="70px" />
+
+  </footer>
 
 
-
-  </div>
 </body>
 
 </html>

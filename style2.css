@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: rgb(149, 191, 203);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    /*top botton, right left*/
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+.header {
+    background-color: rgb(79, 76, 76);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+}
+
+.formulari {
+    display: block;
+    width: auto;
+    border: 2px solid;
+    margin-inline: 30rem;
+
+}
+
+
+input {
+
+    display: block;
+    margin: 5px 0 30px 0;
+}
+input[type="submit"]{
+height: 2rem;
+width: 4rem;
+
+}
+
+#campcom {
+    display: block;
+    margin: 5px 0 30px 0;
+}
+
+
+
+.polit {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+#casilla{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.pie {
+    background-color: rgb(79, 76, 76);
+    display: flex;
+    margin-top: 2rem;
+    height: auto;
+justify-content: center;
+gap: 3rem;
+}

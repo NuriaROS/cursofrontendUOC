@@ -1,117 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CURRICULUM VITAE</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
 </head>
+
 <body>
 
-<header>
- <h1>CURRICULUM VITAE</h1>
- 
- 
- <nav>Anar a la secció:
-     <ul>
-         <li>
-            <a href="#dades personals">Dades personals</a>
-         </li>
-         <li>
-            <a href="#idiomes">Idiomes</a>
-         </li>
-         <li>
-            <a href="#estudis">Estudis</a>
-         </li>
-         <li>
-            <a href="#laboral">Laboral</a>
-         </li>
-     </ul> 
- </nav>
-     
+    <!--CABECERA - ENLACE A OTRAS PAGINAS-->
 
-</header>
+    <header class="header">
+        <img src="assets/img/logo.svg" alt="Logo" class="img_menu">
+        <ul>
+            <li><a href="index.html"><strong>Inici</strong></a></li>
+            <li><a href="cv.html"><strong>CV</strong></a></li>
+            <li><a href="contacte.html"><strong>Contacte</strong></a></li>
+        </ul>
+    </header>
+
+    <!--TITULO-->
+
+    <section class="title">
+        <h1>CURRICULUM VITAE</h1>
+    </section>
+
+    <!--INDICE - ACCESOS DIRECTOS-->
+
+    <section>
 
 
-<h2 >DADES PERSONALS</h2>
-<section id="dades personals">
-<img src="avatar mujer.jpg" alt="foto">
+        <h2 id="index1">INDEX</h2>
 
+        <ul class="index">
+            <li><a href="#dades_personals"><img src="assets/img/contact.svg" vwidth="25" height="25"><span>Dades
+                        personals</span></a>
 
-<p><strong>DARIO LOPEZ CARRETERO</strong></p>
-<pre>
-Domicili: Carrer Alameda, 28
-Població: Barcelona
-Codi Postal: 08024
-Data de naixement: 08-03-1980
-Telèfon: 966666666
-</pre>
+            <li><a href="#idiomes"><img src="assets/img/lang.svg" vwidth="25" height="25"><span>Idiomes</span></a>
+            <li><a href="#estudis"><img src="assets/img/books.svg" vwidth="25" height="25"><span>Estudis</span></a>
+            <li><a href="#laboral "><img src="assets/img/screen.svg" vwidth="25" height="25"><span>Laboral</span></a>
 
-</section>
+        </ul>
+    </section>
 
- <h2 id="idiomes">IDIOMES</h3>
-    <table>
-        <caption><strong>NIVELL D'IDIOMES</strong></caption>
-        <thead>
-        <tr>
-            <th>Idioma</th>
-            <th>Nivell baix</th>
-            <th>Nivell mig</th>
-            <th>Nivell alt</th>
-            <th>Natiu</th>
-        </tr>
-        </thead>
-        <tbody>
+    <!--DADES PERSONALS-->
+
+    <section class="bg-gray">
+        <h2>DADES PERSONALS</h2>
+        <div class="dades">
+            <div>
+                <p><strong>NOM:</strong> DARIO LOPEZ CARRETERO</p>
+                <p><strong>DOMICILI:</strong> Carrer Alameda, 28</p>
+                <p><strong>POBLACIO:</strong> Barcelona</p>
+                <p><strong>CODI POSTAL: </strong> 08024</p>
+                <p><strong>DATA DE NAIXEMENT:</strong> 08-03-1980</p>
+                <p><strong>TELF: </strong> 966666666</p>
+            </div>
+
+            <img src="assets/img/dog.jpg" width="300" height="200">
+
+        </div>
+    </section>
+
+    <!--TABLA IDIOMAS-->
+
+    <section>
+        <h2 id="idiomes">IDIOMES</h2>
+        <table>
             <tr>
-                <td>Espanyol</td>
+                <th>Idioma</th>
+                <th>Nivell baix</th>
+                <th>Nivell mig</th>
+                <th>Nivell alt</th>
+                <th>Nivell natiu</th>
+            </tr>
+
+            <tr>
+                <td>Castellà</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td>X</td>
             </tr>
-            
+
             <tr>
                 <td>Anglès</td>
                 <td></td>
                 <td>X</td>
                 <td></td>
+                <td></td>
             </tr>
-            
+
             <tr>
                 <td>Català</td>
                 <td></td>
                 <td></td>
                 <td>X</td>
+                <td></td>
             </tr>
-    </table>
+        </table>
+    </section>
 
- <h2 id="estudis">ESTUDIS</h4>
-    <li>
-        Batxillerat tecnològic<br/>
-        Institut Joan Brudieu.
-    </li>
-</br>
-    <li>Enginyeria Informàtica de Gestió</br>
-    Universitat Rovira i Virgili (URV).
-    </li>
+    <!--IDIOMAS-->
 
-</br>
+    <section class="bg-gray">
+        <h2 id="estudis">ESTUDIS</h2>
+        <ul>
+            <li>
+                <p>
+                    <strong>Batxillerat tecnològic</strong><br />
+                    Institut Joan Brudieu
+                </p>
+            </li>
+            <li>
+                <p><strong>Enginyeria Informàtica de Gestió</strong></br>
+                    Universitat Rovira i Virgili (URV)
+                </p>
+            </li>
 
-    <li>Màster en Multimèdia</br>
-        Escoles Universitàries Gimbernat i Tomàs Cerdà (EUG).
-    </li>
+            <li>
+                <p><strong>Màster en Multimèdia</strong></br>
+                    Escoles Universitàries Gimbernat i Tomàs Cerdá (EUG)
+        </ul>
 
- <h2 id="laboral">LABORAL</h5>
+    </section>
 
-    <li><strong>IT a grup CREVER (Tarragona, 2009 - 2011)</strong></br>
-<p>Tasques de suport IT al grup d'investigació CREVER de la URV. Suport als usuaris, desenvolupament, instal·lació i manteniment de software, gestió del servidor intern i desenvolupament de pàgines web.</p>
+    <!--EXPERIENCIA LABORAL-->
 
-    </li>
+    <section>
+        <h2 id="laboral">LABORAL</h2>
+        <ul class="info-list">
+            <li>
+                <p><strong>IT a grup CREVER</strong><i> (Tarragona, 2009 - 2011)</i></br>
+                    Tasques de suport IT al grup d'investigació CREVER de la URV. Suport als usuaris,
+                    desenvolupament, instal·lació i manteniment de software, gestió del servidor intern i
+                    desenvolupament de pàgines web.</p>
+            </li>
 
-    <li><strong>Desenvolupament backend a G.Software (Reus, 2011-2013)
-    </strong></br>
-        <p>Desenvolupament de software tipus ERP enfocat a negocis d'hosteleria utilitzant un framework propi.</p>
-    </li>
-        
+            <li>
+                <p><strong>Desenvolupament backend a G.Software</strong><i>(Reus, 2011-2013)</i></br>
+                    Desenvolupament de software tipus ERP enfocat a negocis d'hosteleria utilitzant un framework
+                    propi.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!--PIE PAGINA-->
+
+    <footer>
+        <div class="social">
+            <img src="assets/img/twitter.svg" alt="logo twitter" width="50" height="50">
+            <img src="assets/img/instagram.svg" alt="logo instagram" width="50" height="50">
+            <img src="assets/img/linkedin.svg" alt="logo linkedin" width="50" height="50">
+
+        </div>
+    </footer>
+
 </body>
+
 </html>
