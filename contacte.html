@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="e">
 
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
   <header class="header">
     <img src="assets/img/logo.svg" alt="Logo" class="img_menu">
     <ul>
-      <li><a href="index.html" ><strong>Inici</strong></a></li>
+      <li><a href="index.html"><strong>Inici</strong></a></li>
       <li><a href="cv.html"><strong>CV</strong></a></li>
       <li><a href="contacte.html"><strong>Contacte</strong></a></li>
     </ul>
@@ -38,41 +38,40 @@
 
 
       <label for="campnom">Escriu el teu nom</label>
-        <!--LABEL: etiqueta para identificar elemento del formulario-->
-        <input id="campnom" type="text"  />
+      <!--LABEL: etiqueta para identificar elemento del formulario-->
+      <input id="campnom" type="text" />
 
-        <!--INPUT: crea campo entrada. PLACEHOLDER: muestra texto en fondo del elemento para indicar que tipo de valor introducir -->
+      <!--INPUT: crea campo entrada. PLACEHOLDER: muestra texto en fondo del elemento para indicar que tipo de valor introducir -->
 
-        <label for="campemail">Escriu el teu email</label>
-        <input id="campmail" type="text" />
+      <label for="campemail">Escriu el teu email</label>
+      <input id="campmail" type="text" />
 
 
-        <label for="campcom">Comentaris <textarea id="campcom" cols="50" rows="10"
-            ></textarea></label>
-        
+      <label for="campcom">Comentaris <textarea id="campcom" cols="60" rows="15"></textarea></label>
 
-        <!--CHECKBOX: casilla para activar o desactivar una opción-->
-<footer class="polit">
+
+      <!--CHECKBOX: casilla para activar o desactivar una opción-->
+      <div class="polit">
         <label for="f_accept">He llegit i accepto la <a href="http://www.politicadeprivacitat" target="_blank">
             politica
             de privacitat</a></label>
-            <input type="checkbox" name="accept" id="casilla">
-        <!--TARGET: donde abrirá el enlace, _SELF: se asigna por defecto, abre en misma ubicación que el documento actual (el mismo recuadro o ventana), _BLANK: abre en nueva ventana , _PARENT: are en el recuadro padre, _TOP: abre en la ventana actual-->
+        <input type="checkbox" name="accept" id="casilla">
+      </div>
+      <!--TARGET: donde abrirá el enlace, _SELF: se asigna por defecto, abre en misma ubicación que el documento actual (el mismo recuadro o ventana), _BLANK: abre en nueva ventana , _PARENT: are en el recuadro padre, _TOP: abre en la ventana actual-->
 
-        <input type="submit" value="Enviar">
-</footer>
-
-        <!--SUBMIT: genera un botón para enviar formulario-->
+      <input type="submit" value="Enviar">
+      <!--SUBMIT: genera un botón para enviar formulario-->
     </form>
   </section>
 
-  <footer class="pie">
-    <img src="assets/img/facebook.svg" width="70px" height="70px" />
-    <img src="assets/img/instagram.svg" width="70px" height="70px" />
-    <img src="assets/img/twitter.svg" width="70px" height="70px" />
+  <footer>
+    <div class="social">
+      <img src="assets/img/twitter.svg" alt="logo twitter">
+      <img src="assets/img/instagram.svg" alt="logo instagram">
+      <img src="assets/img/linkedin.svg" alt="logo linkedin">
 
+    </div>
   </footer>
-
 
 </body>
 

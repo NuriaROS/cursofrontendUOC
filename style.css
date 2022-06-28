@@ -28,31 +28,58 @@ td {
     padding: 1rem;
 }
 
-.header {
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 1rem;
+    background-color: black;
+    margin-left: 1rem;
+    height: 2rem;
+}
+
+li {
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(38, 37, 37);
     padding: 1rem;
-    /*margen del texto*/
+    margen del texto */
 
-}
 
-.header ul {
+
+/* .header ul {
     display: flex;
     list-style: none;
     /*elimina puntos de la lista*/
-    gap: 1rem;
-    /*espacio entre elementos de la lista, x defecto 16px*/
+    /* gap: 1rem;
+    espacio entre elementos de la lista, x defecto 16px
 }
 
 .header a {
-    color: white;
+    color: white; */
     /*color de la letra*/
-    text-decoration: none;
+    /* text-decoration: none; */
     /*quita el subrayado que viene por defecto*/
 
-}
+
 
 .title {
     display: flex;
@@ -108,6 +135,8 @@ section {
     display: flex;
     gap: .5rem;
     align-items: center;
+    color: black;
+    font-size: 16px;
 }
 
 .dades {
@@ -127,12 +156,18 @@ section>* {
     /*permite amplitud max del 80% de la medida del viewport o pantalla*/
 }
 
-.social{
+
+footer{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+justify-content: center;
+background-color:black;
+margin-top: 100px;
+
+}
+.social{
+    padding: 1rem;
+    display: inline-flex;
     gap: 2rem;
-    padding: 2rem;
-    margin-top: 4rem;
-    background-color: rgb(101, 97, 97);
+
 }
