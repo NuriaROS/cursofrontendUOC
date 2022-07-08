@@ -69,15 +69,15 @@ a {
     display: flex;
     list-style: none;
     /*elimina puntos de la lista*/
-    /* gap: 1rem;
+/* gap: 1rem;
     espacio entre elementos de la lista, x defecto 16px
 }
 
 .header a {
     color: white; */
-    /*color de la letra*/
-    /* text-decoration: none; */
-    /*quita el subrayado que viene por defecto*/
+/*color de la letra*/
+/* text-decoration: none; */
+/*quita el subrayado que viene por defecto*/
 
 
 
@@ -99,7 +99,49 @@ h1 {
 
 }
 
-h2 {
+@media(max-width: 600px) {
+   
+    li{
+        display: flex;
+        flex-direction: column;
+        font size: .5rem;
+    }
+    .index {
+        display: flex;
+        flex-direction: column;
+        font-size: .5rem;
+    }
+
+    h1 {
+        
+        font-size: 30px;
+        text-align: center;
+     }
+     section h2 {
+        font-size: 20px;
+     }
+    .dades>img{
+        display: none;
+         
+    }
+ li a{
+    font-size: 18px;
+}
+.idiomes{
+    font-size: 12px;
+    margin-left: 2px;
+}
+.tabla{
+    padding: 0;
+}
+}
+
+
+
+
+
+h2,
+h3 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -117,9 +159,7 @@ section {
     background-color: rgb(230, 211, 184);
 }
 
-#index1 {
-    font-size: 3rem;
-}
+
 
 .index {
     display: flex;
@@ -131,7 +171,7 @@ section {
 
 }
 
-.index li a {
+.index a {
     display: flex;
     gap: .5rem;
     align-items: center;
@@ -157,15 +197,16 @@ section>* {
 }
 
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
-justify-content: center;
-background-color:black;
-margin-top: 100px;
+    justify-content: center;
+    background-color: black;
+    margin-top: 100px;
 
 }
-.social{
+
+.social {
     padding: 1rem;
     display: inline-flex;
     gap: 2rem;

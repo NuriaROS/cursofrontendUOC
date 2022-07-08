@@ -24,44 +24,65 @@
 
   <!--TITULO-->
 
-  <section>
+  <section class="contenedor">
     <h1 class="titol">FORMULARI DE CONTACTE</h1>
-  </section>
 
-  <!--FORMULARIO-->
 
-  <section class="formulari">
-    <form name="formulari" method="get" action="procesar.php">
-    <!--metodo GET: envía cantidad limitada de inf de forma pública (datos incluidos en la URL, la cual no puede tener más de 255 carácteres) 
+    <!--FORMULARIO-->
+
+
+      
+       <form name="formulari" method="get" action="procesar.php" class="grid">
+        <!--metodo GET: envía cantidad limitada de inf de forma pública (datos incluidos en la URL, la cual no puede tener más de 255 carácteres) 
     metodo POST: envia cantidad ilimitada de información de forma privada (datos no visibles y longitud que necesitemos)
     ACTION:  declara la URL del archivo en el servidor que va a procesar la información enviada por el formulario.-->
 
+        <p class="grid-nom">
+          <label for="campnom">Nom</label>
+          <!--LABEL: etiqueta para identificar elemento del formulario-->
+          <input id="campnom" type="text" />
 
-      <label for="campnom">Escriu el teu nom</label>
-      <!--LABEL: etiqueta para identificar elemento del formulario-->
-      <input id="campnom" type="text" />
+          <!--INPUT: crea campo entrada. PLACEHOLDER: muestra texto en fondo del elemento para indicar que tipo de valor introducir -->
+        </p>
 
-      <!--INPUT: crea campo entrada. PLACEHOLDER: muestra texto en fondo del elemento para indicar que tipo de valor introducir -->
+        <p class="grid-cog">
+          <label for="campemail">Cognom</label>
+          <input id="campcog" type="text" />
+        </p>
 
-      <label for="campemail">Escriu el teu email</label>
-      <input id="campmail" type="text"/>
+        <p class="grid-telf">
+          <label for="campemail">Telèfon</label>
+          <input id="camptelf" type="text" />
+        </p>
+        
+        <p class="grid-mail">
+          <label for="campemail">Email</label>
+          <input id="campmail" type="text" />
+        </p>
 
+        <p class="grid-comen">
 
-      <label for="campcom">Comentaris <textarea id="campcom" cols="60" rows="15"></textarea></label>
+          <label for="campcom">Comentaris <textarea id="campcom" cols="60" rows="15"></textarea></label>
 
+        </p>
 
-      <!--CHECKBOX: casilla para activar o desactivar una opción-->
-      <div class="polit">
-        <label for="f_accept">He llegit i accepto la <a href="http://www.politicadeprivacitat" target="_blank">
-            politica
-            de privacitat</a></label>
-        <input type="checkbox" name="accept" id="casilla">
-      </div>
-      <!--TARGET: donde abrirá el enlace, _SELF: se asigna por defecto, abre en misma ubicación que el documento actual (el mismo recuadro o ventana), _BLANK: abre en nueva ventana , _PARENT: are en el recuadro padre, _TOP: abre en la ventana actual-->
-
-      <input type="submit" value="Enviar">
-      <!--SUBMIT: genera un botón para enviar formulario-->
-    </form>
+        <!--CHECKBOX: casilla para activar o desactivar una opción-->
+      
+        <p class="polit">
+          <label for="f_accept">He llegit i accepto la <a href="http://www.politicadeprivacitat" target="_blank">
+              politica
+              de privacitat</a></label>
+          <input type="checkbox" name="accept" id="casilla">
+        </p>
+        
+        <!--TARGET: donde abrirá el enlace, _SELF: se asigna por defecto, abre en misma ubicación que el documento actual (el mismo recuadro o ventana), _BLANK: abre en nueva ventana , _PARENT: are en el recuadro padre, _TOP: abre en la ventana actual-->
+        
+        <p class="boton">
+          <input type="submit" value="Enviar">
+          <!--SUBMIT: genera un botón para enviar formulario-->
+        </p>
+      
+      </form>
   </section>
 
   <footer>
@@ -74,4 +95,5 @@
   </footer>
 
 </body>
+
 </html>

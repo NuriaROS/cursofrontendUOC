@@ -101,59 +101,143 @@ button {
     padding: .5rem;
     margin: 1rem;
     background-color: black;
-    color:white;
+    color: white;
 }
-.titolexp{
+
+.titolexp {
     color: white;
     background-color: black;
     margin-bottom: auto;
     padding: 2rem;
 }
-.experiencia{
+
+.experiencia {
     background-color: black;
     display: flex;
     justify-content: space-around;
     padding: 2rem;
 
 }
-.experiencia>img{
+
+.experiencia>img {
     width: 20%;
 }
 
-.aficions{
+.aficions {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-around;
     gap: 2rem;
-margin: 0rem 2rem 2rem 2rem;
 
-     
+
 }
-.etiqafi{
+
+.etiqafi {
     background-color: rgb(229, 226, 226);
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 20rem;
-    height: 2rem;    
-    
-}
-.logoaf{
-    height: 25px;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-justify-content: center;
-background-color:black;
-margin-top: 100px;
+    height: 2rem;
 
 }
-.social{
+
+.logoaf {
+    height: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    margin-top: 100px;
+
+}
+
+.social {
     padding: 1rem;
     display: inline-flex;
     gap: 2rem;
 
+}
+
+
+@media(max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        font size: .5rem;
+    }
+
+    .cabecera a {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    h1,
+    h2,
+    h3 {
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        height: 3rem;
+    }
+
+    .tranquilidad {
+        display: none;
+    }
+
+    .experiencia {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .aficions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    .etiqafi {
+        width: auto;
+        padding: 1rem;
+        }
+
+    .titolexp {
+        padding: 0;
+    }
+.aficions{
+    margin:0 2rem 0 2rem;
+}
+.articles{
+    gap: 0.5rem;
+    margin: .5rem;
+}
+.fotodiseny{
+    width: 90vw;
+}
+.articles img{
+    height: 100px;
+}
+}
+
+@media(min-width: 750px) {
+     .aficions{
+        gap: .5rem;
+}
+.etiqafi{
+    padding: .5rem;
+    height: auto;
+}
 }
