@@ -1,139 +1,129 @@
 body {
-    margin: 0;
-    background-color: rgb(149, 191, 203);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    /*top botton, right left*/
+	margin: 0;
+	background-color: rgb(149, 191, 203);
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
+	/*top botton, right left*/
 }
 
 html {
-    scroll-behavior: auto;
+	scroll-behavior: auto;
 }
 
 /* CABECERA */
 
 .header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
 }
 
 .header ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+	list-style: none;
+	display: flex;
+	gap: 1rem;
 }
 
 a {
-    color: white;
+	color: white;
 }
 
 /* TITOL */
 
 h1 {
-    text-align: center;
-    background-color: grey;
-    margin-top: 0;
-    padding: 2rem;
+	text-align: center;
+	background-color: grey;
+	margin-top: 0;
+	padding: 2rem;
 }
-
 
 /* FORMULARI */
 
 .contenedor {
-   
-    margin: 1rem 4rem 1rem 4rem;
-    border: 2px solid black;
-   
+	border: 2px solid black;
+	/* deberias tener un tope al contenido, si tu web no va estar dirigija a 
+    televisiones , está miuy gigante tu formulario */
+	margin: 1rem auto;
+	max-width: 1024px;
 }
 
-
-
 label {
-    display: block;
+	display: block;
 }
 
 input {
-    height: 2rem;
-    width: 100%;
+	height: 2rem;
+	width: 100%;
 }
 
-
-input[type="submit"] {
-    height: 3rem;
-    width: 5rem;
-    font-size: 1rem;
+input[type='submit'] {
+	height: 3rem;
+	width: 5rem;
+	font-size: 1rem;
 }
 
 #campcom {
-    display: block;
-    margin: 5px 0 30px 0;
-    width: 100%;
+	display: block;
+	margin: 5px 0 30px 0;
+	width: 100%;
 }
 
-
-
 .polit {
-    display: flex;
-    gap: 1.5rem;
-
+	display: flex;
+	gap: 1.5rem;
 }
 
 #casilla {
-
-    height: 1.5rem;
-    width: 1.5rem;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
-    margin-top: 100px;
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: black;
+	margin-top: 100px;
 }
 
 .social {
-    padding: 1rem;
-    display: inline-flex;
-    gap: 2rem;
-
+	padding: 1rem;
+	display: inline-flex;
+	gap: 2rem;
 }
 
 /* GRID */
 
-.grid-nom{
-    grid-area: nom;
+.grid-nom {
+	grid-area: nom;
 }
-.grid-cog{
-    grid-area: cognom;
-}
- 
-.grid-telf{
-    grid-area: telefon
+.grid-cog {
+	grid-area: cognom;
 }
 
-.grid-mail{
-grid-area: mail;
+.grid-telf {
+	grid-area: telefon;
 }
-.grid-comen{
-    grid-area: comentari;
+
+.grid-mail {
+	grid-area: mail;
 }
-.polit{
-    grid-area: politica
+.grid-comen {
+	grid-area: comentari;
 }
-.boton{
-    grid-area: boton;
+.polit {
+	grid-area: politica;
 }
-.grid{
-    display: grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas: 'nom cognom' 'telefon mail' 'comentari comentari' 'politica .' 'boton .';
-    padding: 2rem;
-    grid-gap: 1rem;
+.boton {
+	grid-area: boton;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	grid-template-areas: 'nom cognom' 'telefon mail' 'comentari comentari' 'politica .' 'boton .';
+	padding: 2rem;
+	grid-gap: 1rem;
 }

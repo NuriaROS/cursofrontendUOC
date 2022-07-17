@@ -1,243 +1,236 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
-    margin: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
 }
 
+/* acotumbrate a poner siempre primero las etiquetas sin clases, luego las con clases y por ultimo las media queries
+es para mejor lectura del código. */
+
 .cabecera {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	align-items: center;
 }
 
 .logo {
-    margin-left: 1rem;
-    background-color: black;
-    margin-left: 1rem;
-    height: 2rem;
+	margin-left: 1rem;
+	background-color: black;
+	margin-left: 1rem;
+	height: 2rem;
 }
 
 li {
-    display: inline-flex;
+	display: inline-flex;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 1rem;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+	margin-left: 2rem;
+	margin-right: 1rem;
 }
 
 h1 {
-    text-align: center;
-    color: black;
-    font-size: 3rem;
-    margin-top: 0;
-    padding: 2rem;
-    margin-bottom: 0px;
-    background-image: url(assets/img/home-banner\ 1.png);
-    background-size: cover;
-    height: 10rem;
-    align-items: center;
+	text-align: center;
+	color: black;
+	font-size: 3rem;
+	margin-top: 0;
+	padding: 2rem;
+	margin-bottom: 0px;
+	background-image: url(assets/img/home-banner\ 1.png);
+	background-size: cover;
+	height: 10rem;
+	align-items: center;
 }
 
 .descripcio {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .textedesc {
-    display: flex;
-    text-align: justify;
+	display: flex;
+	text-align: justify;
 }
 
 #inici {
-    display: flex;
-    padding: 1rem;
+	display: flex;
+	padding: 1rem;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2rem;
+	text-align: center;
+	font-size: 2rem;
 }
 
 p {
-    padding: 2rem;
+	padding: 2rem;
 }
 
 h3 {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem;
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 2rem;
 }
 
 .articles {
-    display: flex;
-    justify-content: center;
-    gap: 6rem;
-    margin: 4rem;
+	display: flex;
+	justify-content: center;
+	gap: 6rem;
+	margin: 4rem;
 }
 
 .fotodiseny {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid black;
+	width: 30vw;
 }
 
-.fotodiseny>img {
-    width: 100%;
-    height: 250px;
+.fotodiseny > img {
+	width: 100%;
+	height: 250px;
 }
 
 button {
-    padding: .5rem;
-    margin: 1rem;
-    background-color: black;
-    color: white;
+	padding: 0.5rem;
+	margin: 1rem;
+	background-color: black;
+	color: white;
 }
 
 .titolexp {
-    color: white;
-    background-color: black;
-    margin-bottom: auto;
-    padding: 2rem;
+	color: white;
+	background-color: black;
+	margin-bottom: auto;
+	padding: 2rem;
 }
 
 .experiencia {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem;
 }
 
-.experiencia>img {
-    width: 20%;
+.experiencia > img {
+	width: 20%;
 }
 
 .aficions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 2rem;
-
-
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 2rem;
 }
 
 .etiqafi {
-    background-color: rgb(229, 226, 226);
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 20rem;
-    height: 2rem;
-
+	background-color: rgb(229, 226, 226);
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 20rem;
+	height: 2rem;
 }
 
 .logoaf {
-    height: 25px;
+	height: 25px;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
-    margin-top: 100px;
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: black;
+	margin-top: 100px;
 }
 
 .social {
-    padding: 1rem;
-    display: inline-flex;
-    gap: 2rem;
-
+	padding: 1rem;
+	display: inline-flex;
+	gap: 2rem;
 }
 
+@media (max-width: 600px) {
+	body {
+		font-size: 12px;
+	}
 
-@media(max-width: 600px) {
-    body {
-        font-size: 12px;
-    }
+	li {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.5rem;
+	}
 
-    li {
-        display: flex;
-        flex-direction: column;
-        font size: .5rem;
-    }
+	.cabecera a {
+		flex-direction: column;
+		font-size: 12px;
+	}
 
-    .cabecera a {
-        flex-direction: column;
-        font-size: 12px;
-    }
+	h1,
+	h2,
+	h3 {
+		font-size: 20px;
+		text-align: center;
+	}
 
-    h1,
-    h2,
-    h3 {
+	h1 {
+		height: 3rem;
+	}
 
-        font-size: 20px;
-        text-align: center;
-    }
+	.tranquilidad {
+		display: none;
+	}
 
-    h1 {
-        height: 3rem;
-    }
+	.experiencia {
+		justify-content: center;
+		gap: 1rem;
+	}
 
-    .tranquilidad {
-        display: none;
-    }
+	.aficions {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
-    .experiencia {
-        justify-content: center;
-        gap: 1rem;
-    }
+	.etiqafi {
+		width: auto;
+		padding: 1rem;
+	}
 
-    .aficions {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-
-    }
-
-    .etiqafi {
-        width: auto;
-        padding: 1rem;
-        }
-
-    .titolexp {
-        padding: 0;
-    }
-.aficions{
-    margin:0 2rem 0 2rem;
-}
-.articles{
-    gap: 0.5rem;
-    margin: .5rem;
-}
-.fotodiseny{
-    width: 90vw;
-}
-.articles img{
-    height: 100px;
-}
+	.titolexp {
+		padding: 0;
+	}
+	.aficions {
+		margin: 0 2rem 0 2rem;
+	}
+	.articles {
+		gap: 0.5rem;
+		margin: 0.5rem;
+	}
+	.fotodiseny {
+		width: 90vw;
+	}
+	.articles img {
+		height: 100px;
+	}
 }
 
-@media(min-width: 750px) {
-     .aficions{
-        gap: .5rem;
-}
-.etiqafi{
-    padding: .5rem;
-    height: auto;
-}
+@media (min-width: 750px) {
+	.aficions {
+		gap: 0.5rem;
+	}
+	.etiqafi {
+		padding: 0.5rem;
+		height: auto;
+	}
 }

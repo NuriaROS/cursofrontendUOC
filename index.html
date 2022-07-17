@@ -59,6 +59,8 @@
     <h3>ELS MEUS PROJECTES</h3>
     <div class="articles">
 
+      <!-- quedaria mejor si en formato movil mostrara cada fotodiseñy en todo el ancho de la pantalla
+      y no los 2 como lo hace ahora. -->
       <article class="fotodiseny">
         <img src="assets/img/foto.jpg" />
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic iste voluptas distinctio, nam sit harum quo ad
@@ -121,7 +123,14 @@
 
   <footer>
     <div class="social">
-      <img src="assets/img/twitter.svg" alt="logo twitter">
+      <!-- Los iconos de las redes sociales son para que el usuario puede ver mas informacion de ti y poder comunicarse contigo
+          para esto siempre van envualtas en un anchor <a></a> este anchor abrirá una ventana nueva y para mayor accesibilidad y usabilidad 
+          se recomienda usar target blank y los atributos rel, más info aqui => https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel
+          https://developer.mozilla.org/es/docs/Web/HTML/Element/a#attr-target -->
+
+      <a href="https://twitter.com/?lang=es" target='_blank' rel='noopener noreferrer'>
+        <img src="assets/img/twitter.svg" alt="logo twitter">
+      </a>
       <img src="assets/img/instagram.svg" alt="logo instagram">
       <img src="assets/img/linkedin.svg" alt="logo linkedin">
 
